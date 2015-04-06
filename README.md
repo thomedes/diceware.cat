@@ -1,2 +1,3 @@
 # diceware.cat
-Diceware en català
+
+Diceware en Català

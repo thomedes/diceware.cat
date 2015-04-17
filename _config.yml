@@ -1,0 +1,7 @@
+highlighter: pygments
+github: [Repository metadata]
+name: Diceware.cat
+description: "Diceware en Català: Contrasenyes fàcils de recordar!"
+markdown: redcarpet
+pygments: true
+baseurl: /

@@ -5,5 +5,4 @@ author: "Toni Homedes i Saun"
 highlighter: pygments
 github: [Repository metadata]
 markdown: redcarpet
-pygments: true
 baseurl: /

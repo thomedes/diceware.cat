@@ -14,5 +14,24 @@ title: Diceware.cat
 -->
 </div>
 
-Diceware és un sistema per crear contrasenyes ideat per  que dona contrasenys
-molt fàcils de recordar i, al mateix temps, molt segures.
+<a id="quees"></a> Que és el Diceware
+=====================================
+
+Diceware és un sistema per crear contrasenyes ideat per
+[A. G. Reinhold](http://world.std.com/~reinhold/) que dona
+contrasenyes molt fàcils de recordar i, al mateix temps, molt segures.
+
+Exemple de frase de pas:
+
+paraules | frase de pas (contrasenya)
+-------------------------------------
+4        | Tolosa petanca alemany tipisme
+5        | bufanda nostrat Gandesa Laura pondre
+6        | oest setena angioma durien rotund atestat
+7        | obligat prole tocata puc Sol patxoca viril
+8        | prunes infinit torneu autor frisat fiasco coratge cobrien
+
+
+
+<a id="quees"></a> Com utilitzo el Diceware
+===========================================

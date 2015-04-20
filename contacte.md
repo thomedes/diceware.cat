@@ -3,6 +3,10 @@ page: contacte
 title: Contacte
 layout: default
 ---
+
+Contacte
+========
+
 Si em voleu comentar quelcom sobre la web em podeu escriure a
 
 Toni Homedes i Saun: <toni@homedes.net>

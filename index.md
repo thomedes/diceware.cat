@@ -16,7 +16,7 @@ page: home
 </div>
 
 <a id="quees"></a> Que és el Diceware
-=====================================
+-------------------------------------
 
 Diceware és un sistema per crear contrasenyes ideat per
 [A. G. Reinhold](http://world.std.com/~reinhold/) que dona
@@ -40,6 +40,6 @@ contrasenya.
 Així, el Diceware esta format per una llista de paraules
 
 <a id="comutilitzo"></a> Com utilitzo el Diceware
-===========================================
+-------------------------------------------------
 
 Bàsicament la idea del Diceware es tenir una llista

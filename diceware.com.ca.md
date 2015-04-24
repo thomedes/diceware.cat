@@ -3,7 +3,7 @@ layout: default
 title: Traducció de diceware.com
 author: Arnold Reinhold
 translated: Toni Homedes i Saun
-lang: en-US
+lang: ca
 source: http://world.std.com/~reinhold
 ---
 

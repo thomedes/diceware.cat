@@ -7,9 +7,15 @@ lang: en-US
 source: http://world.std.com/~reinhold
 ---
 
-<note>Traducció al Català de la pàgina original de
-[diceware.com](http://www.diceware.com/) de
-[Arnold Reinhold](http://world.std.com/~reinhold/)</note>
+<div  class="alert alert-info" role="alert" id="legal-notice">
+<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+<span aria-hidden="true">&times;</span></button>
+Traducció al Català de la <a href="http://www.diceware.com/"
+hreflang="en">pàgina original</a> d'<a href="http://world.std.com/~reinhold/" hreflang="en">Arnold Reinhold</a><br />
+<span lang="en">Translation to Catalan of <a href="http://world.std.com/~reinhold/"
+hreflang="en">Arnold Reinhold</a>'s <a href="http://www.diceware.com/"
+hreflang="en">original page</a></span>
+</div>
 
 ---------------------------------------
 

@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="{{ site.description }}">
-    <meta name="author" content="{{ site.author }}">
-
+{% if page.description %}    <meta name="description" content="{{ page.description }}">
+{% else                %}    <meta name="description" content="{{ site.description }}">{% endif %}
+{% if page.author      %}    <meta name="author" content="{{ page.author }}">
+{% else                %}    <meta name="author" content="{{ site.author }}">{% endif %}
+{% if page.translator  %}    <meta name="translator" content="{{ page.translator }}">
+{% endif %}
     <title>{{ site.name }}{% if page.title %} - {{ page.title }}{%endif%}</title>
 
     <link href="css/main.css" rel="stylesheet">

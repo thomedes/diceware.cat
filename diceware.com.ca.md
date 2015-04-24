@@ -1,10 +1,11 @@
 ---
-layout: default
 title: Traducció de diceware.com
+description: Traducció al Català de la pàgina Diceware.com d'Arnold Reinhold
 author: Arnold Reinhold
-translated: Toni Homedes i Saun
+translator: Toni Homedes i Saun
 lang: ca
 source: http://world.std.com/~reinhold
+layout: default
 ---
 
 <div  class="alert alert-info" role="alert" id="legal-notice">
@@ -289,7 +290,7 @@ frase, tireu de nou per escollir una lletra d'aquesta paraula. Tireu un tercer
 i quart cop per escollir un caràcter addicional de la següent taula:
 
            Tercera tirada
-            1 2 3 4 5 6
+             1 2 3 4 5 6
         Q  1 ~ ! # $ % ^
         u  2 & * ( ) - =
         a  3 + [ ] \ { }

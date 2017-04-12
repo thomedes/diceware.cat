@@ -1,0 +1,25 @@
+#! /bin/bash
+
+paraula() {
+    local -i i=$RANDOM
+    # Remove bias
+    while ((i >= (4 * 7776)))
+    do
+        ((i = RANDOM))
+    done
+    (( i = i % 7776 ))
+    sed -n "$i,${i}p" paraules.txt
+}
+
+paraules() {
+    for i in $(seq 1 $1)
+    do
+        paraula
+    done
+}
+
+for n in $(seq 3 7)
+do
+    echo $(paraules $n)
+done
+

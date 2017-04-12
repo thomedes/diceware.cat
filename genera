@@ -1,13 +1,34 @@
 #! /bin/bash
 
-paraula() {
-    local -i i=$RANDOM
+random() { head -c2 /dev/urandom | od -tu | sed -n 's/.*  //p' ; }
+
+limited_random() {
+    local -i limit=$1
+    if (( limit > (2 ** 16) ))
+    then
+        echo "Limit greater than 2^16" >&2
+        exit 1
+    fi
     # Remove bias
-    while ((i >= (4 * 7776)))
+    while (( (i = $(random) ) >= ((2 ** 16) / limit * limit) ))
     do
-        ((i = RANDOM))
+        true
     done
-    (( i = i % 7776 ))
+    ((i = i % limit ))
+    echo $i
+}
+
+ranged_random() {
+    local -i lower_bound=$1; shift
+    local -i upper_bound=$1; shift
+    local -i range
+
+    ((range = upper_bound - lower_bound + 1))
+    echo $(( lower_bound + $(limited_random range) ))
+}
+
+paraula() {
+    local -i i=$(ranged_random 1 7776 )
     sed -n "$i,${i}p" paraules.txt
 }
 
@@ -18,8 +39,8 @@ paraules() {
     done
 }
 
-for n in $(seq 3 7)
+for n in $(seq 5 8)
 do
-    echo $(paraules $n)
+    echo $n '=>' $(paraules $n)
 done
 

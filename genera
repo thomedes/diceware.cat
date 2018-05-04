@@ -1,16 +1,14 @@
 #! /usr/bin/env python
 
-import random
+from random import SystemRandom
 
-random.seed()
+rand = SystemRandom()
 
-with open("paraules.txt", "rt") as f: paraules = f.read().splitlines()
+with open("paraules.txt", "rt") as f:
+    words = f.read().splitlines()
 
-print
+print('')
 for n in range(4, 13):
-    l = []
-    for i in range(n):
-        l.append(paraules[random.randint(0, 7775)])
-    print "%-2d: %s" % (n, " ".join(l))
-print
+    print("%-2d: %s" % (n, " ".join([rand.choice(words) for _ in range(n)])))
+print('')
 

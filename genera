@@ -1,46 +1,16 @@
-#! /bin/bash
+#! /usr/bin/env python
 
-random() { head -c2 /dev/urandom | od -tu | sed -n 's/.*  //p' ; }
+import random
 
-limited_random() {
-    local -i limit=$1
-    if (( limit > (2 ** 16) ))
-    then
-        echo "Limit greater than 2^16" >&2
-        exit 1
-    fi
-    # Remove bias
-    while (( (i = $(random) ) >= ((2 ** 16) / limit * limit) ))
-    do
-        true
-    done
-    ((i = i % limit ))
-    echo $i
-}
+random.seed()
 
-ranged_random() {
-    local -i lower_bound=$1; shift
-    local -i upper_bound=$1; shift
-    local -i range
+with open("paraules.txt", "rt") as f: paraules = f.read().splitlines()
 
-    ((range = upper_bound - lower_bound + 1))
-    echo $(( lower_bound + $(limited_random range) ))
-}
-
-paraula() {
-    local -i i=$(ranged_random 1 7776 )
-    sed -n "$i,${i}p" paraules.txt
-}
-
-paraules() {
-    for i in $(seq 1 $1)
-    do
-        paraula
-    done
-}
-
-for n in $(seq 5 8)
-do
-    echo $n '=>' $(paraules $n)
-done
+print
+for n in range(4, 13):
+    l = []
+    for i in range(n):
+        l.append(paraules[random.randint(0, 7775)])
+    print "%-2d: %s" % (n, " ".join(l))
+print
 
